@@ -274,54 +274,57 @@ const HomeScreen = ({ navigation }: any) => {
             </View>
           </View>
           <View
-            style={tw`bg-[#00B3FF] flex-row mx-[63px] justify-between px-[25px] py-[10px] rounded-[20px] mt-[45px] android:mt-[25px]`}
+            style={tw`bg-[#00B3FF] flex flex-row mx-[63px] justify-center px-[25px] py-[10px] rounded-[20px] mt-[45px] android:mt-[25px]`}
           >
             <View style={tw`absolute left-[20px]`}>{lightmap2}</View>
             <View
-              style={tw`bg-[#1F1B57] h-[10px] rounded-b-[14px] w-full mx-[29px] absolute top-[73px]`}
+              style={tw`bg-[#1F1B57] h-[10px] align-center rounded-b-[14px] w-full mx-[29px] absolute top-[73px] web:w-[80%]`}
             />
-            <Pressable
-              testID="send-button-homescreen"
-              onPress={() => navigation.navigate("PaymentScreen")}
-              style={tw`h-[53px] w-[53px] bg-[#FFFFFF] rounded-full justify-center items-center`}
-            >
-              {sendIcon}
-              <Text
-                style={tw.style(`text-[#571B1B] text-[8px]`, {
-                  fontFamily: "Sora-Regular",
-                })}
+
+            <View style={tw`flex flex-row items-center justify-between w-full`}>
+              <Pressable
+                testID="send-button-homescreen"
+                onPress={() => navigation.navigate("PaymentScreen")}
+                style={tw`h-[53px] w-[53px] bg-[#FFFFFF] rounded-full justify-center items-center`}
               >
-                Send
-              </Text>
-            </Pressable>
-            <Pressable
-              testID="swap-button"
-              onPress={() => navigation.navigate("SwapScreen")}
-              style={tw`h-[53px] w-[53px] bg-[#CCF0FF] rounded-full justify-center items-center`}
-            >
-              {swapIcon}
-              <Text
-                style={tw.style(`text-[#1F1B57] text-[8px]`, {
-                  fontFamily: "Sora-Regular",
-                })}
+                {sendIcon}
+                <Text
+                  style={tw.style(`text-[#571B1B] text-[8px]`, {
+                    fontFamily: "Sora-Regular",
+                  })}
+                >
+                  Send
+                </Text>
+              </Pressable>
+              <Pressable
+                testID="swap-button"
+                onPress={() => navigation.navigate("SwapScreen")}
+                style={tw`h-[53px] w-[53px] bg-[#CCF0FF] rounded-full justify-center items-center`}
               >
-                Swap
-              </Text>
-            </Pressable>
-            <Pressable
-              testID="request-button"
-              onPress={() => navigation.navigate("RecieveScreen")}
-              style={tw`h-[53px] w-[53px] bg-[#FFFFFF] rounded-full justify-center items-center`}
-            >
-              {requestIcon}
-              <Text
-                style={tw.style(`text-[#2E571B] text-[8px]`, {
-                  fontFamily: "Sora-Regular",
-                })}
+                {swapIcon}
+                <Text
+                  style={tw.style(`text-[#1F1B57] text-[8px]`, {
+                    fontFamily: "Sora-Regular",
+                  })}
+                >
+                  Swap
+                </Text>
+              </Pressable>
+              <Pressable
+                testID="request-button"
+                onPress={() => navigation.navigate("RecieveScreen")}
+                style={tw`h-[53px] w-[53px] bg-[#FFFFFF] rounded-full justify-center items-center`}
               >
-                Request
-              </Text>
-            </Pressable>
+                {requestIcon}
+                <Text
+                  style={tw.style(`text-[#2E571B] text-[8px]`, {
+                    fontFamily: "Sora-Regular",
+                  })}
+                >
+                  Request
+                </Text>
+              </Pressable>
+            </View>
           </View>
           <View style={tw`h-[40px]`} />
         </ScrollView>
