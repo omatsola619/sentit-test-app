@@ -225,7 +225,7 @@ const HomeScreen = ({ navigation }: any) => {
             </View>
 
             <View
-              style={tw`pt-[42px] android:pt-[35px] flex flex-row items-center justify-center w-[90%] pb-[50px] android:pb-[30px] mx-[20px] pl-[31px] pr-[34px] rounded-[25px] bg-[#DAE5ED]  absolute top-[110px]`}
+              style={tw`pt-[42px] flex flex-row items-center justify-center w-[90%] pb-[50px] android:pb-[30px] mx-[20px] pl-[31px] pr-[34px] rounded-[25px] bg-[#DAE5ED]  absolute top-[110px]`}
             >
               <View style={tw`flex flex-1`}>
                 <View style={tw`flex flex-row items-center`}>
