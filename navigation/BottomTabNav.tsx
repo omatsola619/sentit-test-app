@@ -83,9 +83,10 @@ const BottomTabNav = () => {
       </Tab.Navigator>
       <View
         style={tw.style(
-          `bg-[#01D6DC] h-[9px] rounded-b-[20px] w-[280px] ios:bottom-[15px]`,
+          `bg-[#01D6DC] h-[9px] rounded-b-[20px] w-[280px] ios:bottom-[15px] web:flex web:flex-row web:justify-center
+          web:w-[80%] web:mx-auto`,
           {
-            left: width / 2 - 140,
+            left: Platform.OS !== "web" && width / 2 - 140,
           }
         )}
       />
