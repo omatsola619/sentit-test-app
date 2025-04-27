@@ -330,7 +330,7 @@ const HomeScreen = ({ navigation }: any) => {
           <View style={tw`h-[40px]`} />
         </ScrollView>
       </View>
-      <View>
+      <View style={tw`flex-1 flex`}>
         <TokensTab
           testID1={"add-asset-button"}
           testID2={"scroll-asset"}
@@ -343,13 +343,6 @@ const HomeScreen = ({ navigation }: any) => {
           setIsVisible={setErrorModal}
         />
       </View>
-
-      {/* <DrawerScreen
-        testId="drawer-screen"
-        isVisible={openDrawer}
-        setIsVisible={setOpenDrawer}
-        navigation={navigation}
-      /> */}
     </View>
   );
 };

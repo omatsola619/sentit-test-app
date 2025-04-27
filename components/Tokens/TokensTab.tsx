@@ -82,7 +82,7 @@ const TokensTab = ({
   return (
     <View style={tw`bg-[#FFFFFF] mx-[19px] h-full rounded-t-[20px]`}>
       <View
-        style={tw`flex-row items-center justify-between mx-[27px] mt-[17px]`}
+        style={tw`flex flex-row items-center justify-between mx-[27px] mt-[17px]`}
       >
         <View style={tw`flex-row items-center`}>
           <Text

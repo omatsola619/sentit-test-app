@@ -63,6 +63,7 @@ const BottomTabNav = () => {
             right: 18,
             bottom: Platform.OS === "ios" ? 15 : 0,
             borderRadius: 20,
+            marginHorizontal: Platform.OS !== "web" ? 20 : 0,
           },
         }}
       >
