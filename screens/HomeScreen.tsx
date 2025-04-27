@@ -17,6 +17,7 @@ import Svg, {
   Use,
 } from "react-native-svg";
 import tw from "twrnc";
+import TokensTab from "../components/Tokens/TokensTab";
 
 const ellipse = (
   <Svg width={"100%"} height={246} fill="none">
@@ -329,19 +330,19 @@ const HomeScreen = ({ navigation }: any) => {
           <View style={tw`h-[40px]`} />
         </ScrollView>
       </View>
-      {/* <View>
+      <View>
         <TokensTab
           testID1={"add-asset-button"}
           testID2={"scroll-asset"}
           navigation={navigation}
-          loadingAsset={loadingAsset}
-          newAsset={assetsInfo}
-          setNewAsset={setAssetsInfo}
+          loadingAsset={false}
+          newAsset={""}
+          setNewAsset={""}
           setLoading={setLoading}
           setErrorMsg={setErrorMsg}
           setIsVisible={setErrorModal}
         />
-      </View> */}
+      </View>
 
       {/* <DrawerScreen
         testId="drawer-screen"

@@ -30,7 +30,7 @@ const LoginScreen = ({navigation}) => {
   const handleLogin = () => {
     // Here you can add your login logic
     // For now, we'll just navigate to the home screen
-    navigation.navigate('Home');
+    navigation.navigate('HomeStack');
   };
 
   return (
